@@ -6,564 +6,997 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
-    "hero_RkimKJ": {
-      "type": "hero",
+    "hero_vuurk": {
+      "type": "media-with-content",
+      "name": "Hero VUURK",
+      "settings": {
+        "media_position": "right",
+        "media_width": "medium",
+        "media_height": "80svh",
+        "section_width": "full-width",
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      },
       "blocks": {
-        "group_3cB4GW": {
-          "type": "group",
+        "media": {
+          "type": "_media-without-appearance",
+          "static": true,
           "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
+            "media_type": "image",
+            "image": "shopify://shop_images/vuurk-hero-doypack.webp",
+            "image_position": "cover"
+          },
+          "blocks": {}
+        },
+        "content": {
+          "type": "_content-without-appearance",
+          "static": true,
+          "settings": {
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 34,
-            "width_mobile": "custom",
-            "custom_width_mobile": 53,
-            "height": "fit",
-            "custom_height": 100,
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "open_in_new_tab": false,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "gap": 20
           },
           "blocks": {
-            "text_KxeJ6r": {
+            "eyebrow": {
               "type": "text",
               "settings": {
-                "text": "<p>Savor every. last. bite. </p>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h2",
-                "font": "var(--font-body--family)",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "{{ settings.color_palette.background }}",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "text": "<p>Gummies energéticas</p>",
+                "type_preset": "h6",
+                "text_color": "{{ settings.color_palette.color1 }}"
               },
               "blocks": {}
             },
-            "button_nazDaa": {
+            "heading": {
+              "type": "text",
+              "settings": {
+                "text": "<h1>Energía + Enfoque.</h1>",
+                "type_preset": "h1"
+              },
+              "blocks": {}
+            },
+            "tagline": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Burn clean.</p>",
+                "type_preset": "h3"
+              },
+              "blocks": {}
+            },
+            "cta": {
               "type": "button",
               "settings": {
-                "label": "Shop all →",
+                "label": "Comprar VUURK",
                 "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button-unstyled",
-                "link_text_color": "{{ settings.color_palette.background }}",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
+                "style_class": "button"
               },
               "blocks": {}
             }
           },
           "block_order": [
-            "text_KxeJ6r",
-            "button_nazDaa"
+            "eyebrow",
+            "heading",
+            "tagline",
+            "cta"
           ]
         }
       },
-      "block_order": [
-        "group_3cB4GW"
-      ],
-      "settings": {
-        "media_type_1": "image",
-        "media_type_2": "image",
-        "open_in_new_tab": false,
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
-        "section_width": "page-width",
-        "section_height": "large",
-        "section_height_custom": 50,
-        "background_color": "{{ settings.color_palette.color1 }}",
-        "toggle_overlay": false,
-        "overlay_color": "#000000",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "blurred_reflection": false,
-        "reflection_opacity": 75,
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
+      "block_order": []
     },
-    "product_list_X8Q7bi": {
-      "type": "product-list",
+    "marquee_vuurk": {
+      "type": "marquee",
+      "name": "Franja VUURK",
+      "settings": {
+        "movement_direction": "normal",
+        "background_color": "{{ settings.color_palette.color1 }}",
+        "padding-block-start": 16,
+        "padding-block-end": 16,
+        "gap_between_elements": 24
+      },
       "blocks": {
-        "static-header": {
-          "type": "_product-list-content",
+        "line": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Energía + Enfoque · Burn clean. · Gummies energéticas ·</p>",
+            "type_preset": "h3",
+            "text_color": "{{ settings.color_palette.background }}"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "line"
+      ]
+    },
+    "intro_vuurk": {
+      "type": "media-with-content",
+      "name": "Presentación VUURK",
+      "settings": {
+        "media_position": "left",
+        "media_width": "wide",
+        "media_height": "60svh",
+        "section_width": "page-width",
+        "extend_media": false,
+        "background_color": "{{ settings.color_palette.color2 }}",
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      },
+      "blocks": {
+        "media": {
+          "type": "_media-without-appearance",
           "static": true,
           "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "media_type": "image",
+            "image": "shopify://shop_images/vuurk-pouches.webp",
+            "image_position": "cover"
           },
           "blocks": {}
         },
-        "static-product-card": {
-          "type": "_product-card",
-          "name": "t:names.product_card",
+        "content": {
+          "type": "_content-without-appearance",
           "static": true,
           "settings": {
-            "product_card_gap": 0,
-            "background_color": "{{ settings.color_palette.background }}",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 20
           },
           "blocks": {
-            "product_card_gallery_Gn6P7T": {
-              "type": "_product-card-gallery",
-              "name": "t:names.product_card_media",
+            "eyebrow": {
+              "type": "text",
               "settings": {
-                "image_ratio": "square",
-                "border": "solid",
-                "border_width": 0,
-                "border_opacity": 0,
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "text": "<p>El producto</p>",
+                "type_preset": "h6"
               },
               "blocks": {}
             },
-            "group_AUJmQt": {
-              "type": "_product-card-group",
-              "name": "t:names.group",
+            "heading": {
+              "type": "text",
               "settings": {
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "space-between",
-                "vertical_alignment": "flex-start",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "space-between",
-                "gap": 4,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "open_in_new_tab": false,
-                "padding-block-start": 12,
-                "padding-block-end": 12,
-                "padding-inline-start": 12,
-                "padding-inline-end": 12
+                "text": "<h2>VUURK. Gummies energéticas en doypack.</h2>",
+                "type_preset": "h2"
+              },
+              "blocks": {}
+            },
+            "attrs": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Energía + Enfoque · Burn clean. · Doypack</p>",
+                "type_preset": "h5"
+              },
+              "blocks": {}
+            },
+            "cta": {
+              "type": "button",
+              "settings": {
+                "label": "Comprar VUURK",
+                "link": "shopify://collections/all",
+                "style_class": "button"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "eyebrow",
+            "heading",
+            "attrs",
+            "cta"
+          ]
+        }
+      },
+      "block_order": []
+    },
+    "gallery_vuurk": {
+      "type": "carousel",
+      "name": "Galería de renders",
+      "settings": {
+        "columns": 3,
+        "mobile_columns": "1",
+        "section_width": "page-width",
+        "columns_gap": 16,
+        "background_color": "{{ settings.color_palette.color3 }}",
+        "icons_style": "arrow",
+        "icons_shape": "circle",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "static-header": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "gap": 12,
+            "width": "fill",
+            "padding-block-end": 24
+          },
+          "blocks": {
+            "eyebrow": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Packaging</p>",
+                "type_preset": "h6",
+                "text_color": "{{ settings.color_palette.color1 }}"
+              },
+              "blocks": {}
+            },
+            "heading": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>El doypack, desde cada ángulo.</h2>",
+                "type_preset": "h2"
+              },
+              "blocks": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Renders del envase original de VUURK.</p>",
+                "type_preset": "rte"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "eyebrow",
+            "heading",
+            "text"
+          ],
+          "static": true
+        },
+        "static-carousel-content": {
+          "type": "_carousel-content",
+          "static": true,
+          "settings": {
+            "height": "fit",
+            "position": "top"
+          },
+          "blocks": {
+            "card_frontal": {
+              "type": "_card",
+              "settings": {
+                "gap": 12
               },
               "blocks": {
-                "group_pLH7Cd": {
-                  "type": "_product-card-group",
-                  "name": "t:names.group",
+                "image_frontal": {
+                  "type": "image",
                   "settings": {
-                    "content_direction": "row",
-                    "vertical_on_mobile": true,
-                    "horizontal_alignment": "space-between",
-                    "vertical_alignment": "center",
-                    "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "flex-start",
-                    "vertical_alignment_flex_direction_column": "flex-start",
-                    "gap": 8,
-                    "width": "fill",
-                    "custom_width": 75,
-                    "width_mobile": "custom",
-                    "custom_width_mobile": 75,
-                    "height": "fit",
-                    "custom_height": 100,
-                    "background_media": "none",
-                    "video_position": "cover",
-                    "background_image_position": "cover",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
-                    "toggle_overlay": false,
-                    "overlay_color": "#00000026",
-                    "overlay_style": "solid",
-                    "gradient_direction": "to top",
-                    "open_in_new_tab": false,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
+                    "image": "shopify://shop_images/vuurk-render-frontal.webp",
+                    "image_ratio": "portrait",
+                    "border_radius": 12
                   },
-                  "blocks": {
-                    "product_title_gtg38q": {
-                      "type": "product-title",
-                      "name": "t:names.product_title",
-                      "settings": {
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "h5",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    },
-                    "price_Vz3EzL": {
-                      "type": "price",
-                      "name": "t:names.product_price",
-                      "settings": {
-                        "show_sale_price_first": true,
-                        "show_installments": false,
-                        "show_tax_info": false,
-                        "type_preset": "paragraph",
-                        "width": "fit-content",
-                        "alignment": "right",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "product_title_gtg38q",
-                    "price_Vz3EzL"
-                  ]
+                  "blocks": {}
                 },
-                "group_3Fwdtp": {
-                  "type": "_product-card-group",
-                  "name": "t:names.group",
+                "caption_frontal": {
+                  "type": "text",
                   "settings": {
-                    "content_direction": "column",
-                    "vertical_on_mobile": true,
-                    "horizontal_alignment": "flex-start",
-                    "vertical_alignment": "center",
-                    "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "flex-start",
-                    "vertical_alignment_flex_direction_column": "flex-start",
-                    "gap": 12,
-                    "width": "fit-content",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
-                    "custom_width_mobile": 25,
-                    "height": "fit",
-                    "custom_height": 100,
-                    "background_media": "none",
-                    "video_position": "cover",
-                    "background_image_position": "cover",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
-                    "toggle_overlay": false,
-                    "overlay_color": "#00000026",
-                    "overlay_style": "solid",
-                    "gradient_direction": "to top",
-                    "open_in_new_tab": false,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
+                    "text": "<p>Vista frontal</p>",
+                    "type_preset": "h6"
                   },
-                  "blocks": {
-                    "text_JHMjjF": {
-                      "type": "text",
-                      "name": "t:names.text",
-                      "settings": {
-                        "text": "<p>{{ closest.product.metafields.descriptors.subtitle.value }}</p>",
-                        "width": "100%",
-                        "max_width": "none",
-                        "alignment": "left",
-                        "type_preset": "paragraph",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_JHMjjF"
-                  ]
+                  "blocks": {}
                 }
               },
               "block_order": [
-                "group_pLH7Cd",
-                "group_3Fwdtp"
+                "image_frontal",
+                "caption_frontal"
+              ]
+            },
+            "card_34": {
+              "type": "_card",
+              "settings": {
+                "gap": 12
+              },
+              "blocks": {
+                "image_34": {
+                  "type": "image",
+                  "settings": {
+                    "image": "shopify://shop_images/vuurk-render-34.webp",
+                    "image_ratio": "portrait",
+                    "border_radius": 12
+                  },
+                  "blocks": {}
+                },
+                "caption_34": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Perspectiva 3/4</p>",
+                    "type_preset": "h6"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_34",
+                "caption_34"
+              ]
+            },
+            "card_lateral": {
+              "type": "_card",
+              "settings": {
+                "gap": 12
+              },
+              "blocks": {
+                "image_lateral": {
+                  "type": "image",
+                  "settings": {
+                    "image": "shopify://shop_images/vuurk-render-lateral.webp",
+                    "image_ratio": "portrait",
+                    "border_radius": 12
+                  },
+                  "blocks": {}
+                },
+                "caption_lateral": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Lateral</p>",
+                    "type_preset": "h6"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_lateral",
+                "caption_lateral"
+              ]
+            },
+            "card_zipper": {
+              "type": "_card",
+              "settings": {
+                "gap": 12
+              },
+              "blocks": {
+                "image_zipper": {
+                  "type": "image",
+                  "settings": {
+                    "image": "shopify://shop_images/vuurk-render-zipper.webp",
+                    "image_ratio": "portrait",
+                    "border_radius": 12
+                  },
+                  "blocks": {}
+                },
+                "caption_zipper": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Detalle del zipper</p>",
+                    "type_preset": "h6"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_zipper",
+                "caption_zipper"
+              ]
+            },
+            "card_base": {
+              "type": "_card",
+              "settings": {
+                "gap": 12
+              },
+              "blocks": {
+                "image_base": {
+                  "type": "image",
+                  "settings": {
+                    "image": "shopify://shop_images/vuurk-render-base.webp",
+                    "image_ratio": "portrait",
+                    "border_radius": 12
+                  },
+                  "blocks": {}
+                },
+                "caption_base": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Detalle de la base</p>",
+                    "type_preset": "h6"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_base",
+                "caption_base"
               ]
             }
           },
           "block_order": [
-            "product_card_gallery_Gn6P7T",
-            "group_AUJmQt"
+            "card_frontal",
+            "card_34",
+            "card_lateral",
+            "card_zipper",
+            "card_base"
           ]
         }
       },
-      "name": "t:names.product_list",
-      "settings": {
-        "collection": "all",
-        "layout_type": "grid",
-        "carousel_on_mobile": false,
-        "max_products": 6,
-        "columns": 3,
-        "mobile_columns": "1",
-        "mobile_card_size": "60cqw",
-        "columns_gap": 1,
-        "rows_gap": 1,
-        "icons_style": "arrow",
-        "icons_shape": "none",
-        "section_width": "full-width",
-        "horizontal_alignment": "flex-start",
-        "gap": 0,
-        "background_color": "{{ settings.color_palette.background }}",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
+      "block_order": []
     },
-    "section_RhpYRt": {
+    "info_vuurk": {
       "type": "section",
+      "name": "Información VUURK",
+      "settings": {
+        "content_direction": "column",
+        "gap": 20,
+        "section_width": "page-width",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      },
       "blocks": {
-        "video_NqWNaD": {
-          "type": "video",
-          "name": "t:names.video",
+        "eyebrow": {
+          "type": "text",
           "settings": {
-            "source": "url",
-            "video_autoplay": false,
-            "video_loop": true,
-            "custom_width": 67,
-            "custom_width_mobile": 100,
-            "aspect_ratio": "16/9",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "text": "<p>Información</p>",
+            "type_preset": "h6"
           },
           "blocks": {}
         },
-        "group_TEanyT": {
-          "type": "group",
-          "name": "t:names.caption",
+        "heading": {
+          "type": "text",
           "settings": {
-            "content_direction": "column",
+            "text": "<h2>Información del producto.</h2>",
+            "type_preset": "h2"
+          },
+          "blocks": {}
+        },
+        "items": {
+          "type": "group",
+          "settings": {
+            "content_direction": "row",
             "vertical_on_mobile": true,
-            "horizontal_alignment": "space-between",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 33,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "open_in_new_tab": false,
-            "padding-block-start": 40,
-            "padding-block-end": 40,
-            "padding-inline-start": 40,
-            "padding-inline-end": 40
+            "gap": 16,
+            "width": "fill",
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-start"
           },
           "blocks": {
-            "text_BRFzjN": {
-              "type": "text",
-              "name": "t:names.heading",
+            "item_producto": {
+              "type": "group",
               "settings": {
-                "text": "<h3>A Family Tradition of Bold, Fresh Flavor</h3>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "content_direction": "column",
+                "gap": 8,
+                "width": "fill",
+                "border": "solid",
+                "border_width": 1,
+                "border_color": "{{ settings.color_palette.color3 }}",
+                "border_radius": 12,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 24,
+                "padding-inline-end": 24
               },
-              "blocks": {}
+              "blocks": {
+                "label_producto": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Producto</p>",
+                    "type_preset": "h6",
+                    "text_color": "{{ settings.color_palette.color1 }}"
+                  },
+                  "blocks": {}
+                },
+                "value_producto": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Gummies energéticas</p>",
+                    "type_preset": "h4"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "label_producto",
+                "value_producto"
+              ]
             },
-            "text_tKxhbY": {
-              "type": "text",
-              "name": "t:names.text",
+            "item_linea": {
+              "type": "group",
               "settings": {
-                "text": "<p>Food has the power to connect generations. Whether it’s learning family recipes or the intense memories triggered by the flavors and aromas of our childhood.</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "content_direction": "column",
+                "gap": 8,
+                "width": "fill",
+                "border": "solid",
+                "border_width": 1,
+                "border_color": "{{ settings.color_palette.color3 }}",
+                "border_radius": 12,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 24,
+                "padding-inline-end": 24
               },
-              "blocks": {}
+              "blocks": {
+                "label_linea": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Línea</p>",
+                    "type_preset": "h6",
+                    "text_color": "{{ settings.color_palette.color1 }}"
+                  },
+                  "blocks": {}
+                },
+                "value_linea": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Energía + Enfoque · Burn clean.</p>",
+                    "type_preset": "h4"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "label_linea",
+                "value_linea"
+              ]
+            },
+            "item_envase": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "gap": 8,
+                "width": "fill",
+                "border": "solid",
+                "border_width": 1,
+                "border_color": "{{ settings.color_palette.color3 }}",
+                "border_radius": 12,
+                "padding-block-start": 24,
+                "padding-block-end": 24,
+                "padding-inline-start": 24,
+                "padding-inline-end": 24
+              },
+              "blocks": {
+                "label_envase": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Envase</p>",
+                    "type_preset": "h6",
+                    "text_color": "{{ settings.color_palette.color1 }}"
+                  },
+                  "blocks": {}
+                },
+                "value_envase": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Doypack</p>",
+                    "type_preset": "h4"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "label_envase",
+                "value_envase"
+              ]
             }
           },
           "block_order": [
-            "text_BRFzjN",
-            "text_tKxhbY"
+            "item_producto",
+            "item_linea",
+            "item_envase"
           ]
+        },
+        "note": {
+          "type": "text",
+          "settings": {
+            "text": "<p>La ficha técnica completa (contenido, ingredientes, modo de uso y advertencias) se publicará cuando VUURK la confirme.</p>",
+            "type_preset": "rte"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "video_NqWNaD",
-        "group_TEanyT"
-      ],
-      "name": "t:names.video_section",
+        "eyebrow",
+        "heading",
+        "items",
+        "note"
+      ]
+    },
+    "buy_vuurk": {
+      "type": "section",
+      "name": "Compra VUURK",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 6,
-        "section_width": "full-width",
-        "section_height_custom": 50,
-        "background_media": "none",
+        "gap": 48,
+        "section_width": "page-width",
         "background_color": "{{ settings.color_palette.color2 }}",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/vuurk-doypack-frontal.webp",
+            "image_ratio": "portrait",
+            "width": "custom",
+            "custom_width": 45,
+            "width_mobile": "fill",
+            "border_radius": 16
+          },
+          "blocks": {}
+        },
+        "details": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "gap": 16,
+            "width": "fill"
+          },
+          "blocks": {
+            "eyebrow": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Comprar</p>",
+                "type_preset": "h6"
+              },
+              "blocks": {}
+            },
+            "heading": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>VUURK Energía + Enfoque</h2>",
+                "type_preset": "h2"
+              },
+              "blocks": {}
+            },
+            "sub": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Gummies energéticas · Doypack</p>",
+                "type_preset": "h5"
+              },
+              "blocks": {}
+            },
+            "pending": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Precio, envíos y medios de pago: pendientes de confirmación.</p>",
+                "type_preset": "rte"
+              },
+              "blocks": {}
+            },
+            "cta": {
+              "type": "button",
+              "settings": {
+                "label": "Comprar VUURK",
+                "link": "shopify://collections/all",
+                "style_class": "button"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "eyebrow",
+            "heading",
+            "sub",
+            "pending",
+            "cta"
+          ]
+        }
+      },
+      "block_order": [
+        "image",
+        "details"
+      ]
+    },
+    "featured_product_vuurk": {
+      "type": "featured-product-information",
+      "name": "Compra VUURK (producto Shopify)",
+      "disabled": true,
+      "settings": {
+        "product": "",
+        "gap": 48,
+        "equal_columns": true,
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      },
+      "blocks": {
+        "media-gallery": {
+          "type": "_featured-product-information-carousel",
+          "static": true,
+          "settings": {
+            "constrain_to_viewport": true,
+            "media_fit": "contain",
+            "media_radius": 0,
+            "extend_media": false,
+            "hide_variants": true,
+            "slideshow_controls_style": "counter",
+            "slideshow_mobile_controls_style": "dots",
+            "thumbnail_position": "bottom",
+            "thumbnail_width": 44
+          },
+          "blocks": {}
+        },
+        "product-details": {
+          "type": "_product-details",
+          "static": true,
+          "settings": {
+            "gap": 28,
+            "sticky_details_desktop": true,
+            "padding-block-start": 24,
+            "padding-block-end": 24
+          },
+          "blocks": {
+            "header": {
+              "type": "group",
+              "settings": {
+                "gap": 12
+              },
+              "blocks": {
+                "title": {
+                  "type": "product-title",
+                  "settings": {
+                    "type_preset": "rte"
+                  },
+                  "blocks": {}
+                },
+                "price": {
+                  "type": "price",
+                  "settings": {
+                    "show_installments": true,
+                    "show_tax_info": true
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "title",
+                "price"
+              ]
+            },
+            "variant_picker": {
+              "type": "variant-picker",
+              "settings": {},
+              "blocks": {}
+            },
+            "buy_buttons": {
+              "type": "buy-buttons",
+              "settings": {},
+              "blocks": {
+                "quantity": {
+                  "type": "quantity",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                },
+                "add-to-cart": {
+                  "type": "add-to-cart",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                },
+                "accelerated-checkout": {
+                  "type": "accelerated-checkout",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            }
+          },
+          "block_order": [
+            "header",
+            "variant_picker",
+            "buy_buttons"
+          ]
+        }
+      },
+      "block_order": []
+    },
+    "faq_vuurk": {
+      "type": "section",
+      "name": "Preguntas frecuentes",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "flex-start",
+        "gap": 48,
+        "section_width": "page-width",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      },
+      "blocks": {
+        "intro": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 35,
+            "width_mobile": "fill"
+          },
+          "blocks": {
+            "eyebrow": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Preguntas</p>",
+                "type_preset": "h6",
+                "text_color": "{{ settings.color_palette.color1 }}"
+              },
+              "blocks": {}
+            },
+            "heading": {
+              "type": "text",
+              "settings": {
+                "text": "<h2>Preguntas frecuentes.</h2>",
+                "type_preset": "h2"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "eyebrow",
+            "heading"
+          ]
+        },
+        "questions": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "gap": 0,
+            "width": "fill"
+          },
+          "blocks": {
+            "accordion": {
+              "type": "accordion",
+              "settings": {
+                "icon": "plus",
+                "dividers": true,
+                "type_preset": "h5"
+              },
+              "blocks": {
+                "row_que_es": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "¿Qué es VUURK?",
+                    "open_by_default": true
+                  },
+                  "blocks": {
+                    "answer_que_es": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Gummies energéticas de la línea Energía + Enfoque.</p>",
+                        "type_preset": "rte"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "answer_que_es"
+                  ]
+                },
+                "row_cafeina": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "¿Cuánta cafeína contiene?",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "answer_cafeina": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Información pendiente de confirmación por VUURK.</p>",
+                        "type_preset": "rte"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "answer_cafeina"
+                  ]
+                },
+                "row_contenido": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "¿Cuántas gummies trae cada doypack?",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "answer_contenido": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Información pendiente de confirmación por VUURK.</p>",
+                        "type_preset": "rte"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "answer_contenido"
+                  ]
+                },
+                "row_uso": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "¿Cómo se toman?",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "answer_uso": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Información pendiente de confirmación por VUURK.</p>",
+                        "type_preset": "rte"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "answer_uso"
+                  ]
+                },
+                "row_envios": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "¿A dónde hacen envíos?",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "answer_envios": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Información pendiente de confirmación por VUURK.</p>",
+                        "type_preset": "rte"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "answer_envios"
+                  ]
+                },
+                "row_pagos": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "¿Qué medios de pago aceptan?",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "answer_pagos": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Información pendiente de confirmación por VUURK.</p>",
+                        "type_preset": "rte"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "answer_pagos"
+                  ]
+                }
+              },
+              "block_order": [
+                "row_que_es",
+                "row_cafeina",
+                "row_contenido",
+                "row_uso",
+                "row_envios",
+                "row_pagos"
+              ]
+            }
+          },
+          "block_order": [
+            "accordion"
+          ]
+        }
+      },
+      "block_order": [
+        "intro",
+        "questions"
+      ]
     }
   },
   "order": [
-    "hero_RkimKJ",
-    "product_list_X8Q7bi",
-    "section_RhpYRt"
+    "hero_vuurk",
+    "marquee_vuurk",
+    "intro_vuurk",
+    "gallery_vuurk",
+    "info_vuurk",
+    "buy_vuurk",
+    "featured_product_vuurk",
+    "faq_vuurk"
   ]
 }

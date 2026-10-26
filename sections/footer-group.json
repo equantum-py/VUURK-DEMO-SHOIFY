@@ -14,6 +14,15 @@
     "footer_WnX4aJ": {
       "type": "footer",
       "blocks": {
+        "brand_vuurk": {
+          "type": "text",
+          "name": "Marca",
+          "settings": {
+            "text": "<p>VUURK · Energía + Enfoque. Burn clean.</p>",
+            "type_preset": "h5"
+          },
+          "blocks": {}
+        },
         "group_EJMKU9": {
           "type": "group",
           "name": "t:names.menu",
@@ -55,45 +64,7 @@
               "name": "t:names.menu",
               "settings": {
                 "menu": "footer",
-                "heading": "Shop",
-                "menu_spacing": 4,
-                "show_as_accordion": false,
-                "accordion_icon": "caret",
-                "accordion_dividers": false,
-                "heading_preset": "h4",
-                "link_preset": "paragraph",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "menu_CY8HUp": {
-              "type": "menu",
-              "name": "t:names.menu",
-              "settings": {
-                "menu": "",
-                "heading": "Ask",
-                "menu_spacing": 4,
-                "show_as_accordion": false,
-                "accordion_icon": "caret",
-                "accordion_dividers": false,
-                "heading_preset": "h4",
-                "link_preset": "paragraph",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "menu_n8zrAw": {
-              "type": "menu",
-              "name": "t:names.menu",
-              "settings": {
-                "menu": "",
-                "heading": "Connect",
+                "heading": "Tienda",
                 "menu_spacing": 4,
                 "show_as_accordion": false,
                 "accordion_icon": "caret",
@@ -109,9 +80,7 @@
             }
           },
           "block_order": [
-            "menu_k94JXn",
-            "menu_CY8HUp",
-            "menu_n8zrAw"
+            "menu_k94JXn"
           ]
         },
         "email_signup_t3aAfi": {
@@ -120,7 +89,7 @@
           "settings": {
             "width": "fill",
             "custom_width": 70,
-            "heading": "We send tasty emails",
+            "heading": "Recibe novedades de VUURK",
             "heading_preset": "h4",
             "border_style": "underline",
             "input_style": "custom",
@@ -132,7 +101,7 @@
             "input_type_preset": "paragraph",
             "style_class": "button-unstyled",
             "display_type": "arrow",
-            "label": "Sign Up",
+            "label": "Suscribirme",
             "integrated_button": false,
             "button_type_preset": "paragraph",
             "padding-block-start": 0,
@@ -144,6 +113,7 @@
         }
       },
       "block_order": [
+        "brand_vuurk",
         "group_EJMKU9",
         "email_signup_t3aAfi"
       ],
@@ -162,7 +132,7 @@
         "copyright": {
           "type": "footer-copyright",
           "settings": {
-            "show_powered_by": true,
+            "show_powered_by": false,
             "font_size": "0.75rem",
             "case": "none"
           },
@@ -181,11 +151,11 @@
           "type": "social-links",
           "name": "t:names.social_media_links",
           "settings": {
-            "facebook_url": "https://facebook.com",
-            "instagram_url": "https://instagram.com",
-            "youtube_url": "https://youtube.com",
-            "tiktok_url": "https://www.tiktok.com/",
-            "twitter_url": "https://x.com"
+            "facebook_url": "",
+            "instagram_url": "",
+            "youtube_url": "",
+            "tiktok_url": "",
+            "twitter_url": ""
           },
           "blocks": {}
         }

@@ -9,1007 +9,362 @@
  */
 {
   "sections": {
-    "hero_vuurk": {
-      "type": "media-with-content",
-      "name": "Hero VUURK",
-      "settings": {
-        "media_position": "right",
-        "media_width": "medium",
-        "media_height": "80svh",
-        "section_width": "full-width",
-        "background_color": "{{ settings.color_palette.background }}",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      },
+    "vk_hero": {
+      "type": "vuurk-hero",
       "blocks": {
-        "media": {
-          "type": "_media-without-appearance",
-          "static": true,
+        "vk_1": {
+          "type": "chip",
           "settings": {
-            "media_type": "image",
-            "image": "shopify://shop_images/vuurk-hero-doypack.webp",
-            "image_position": "cover"
-          },
-          "blocks": {}
+            "text": "Gummies"
+          }
         },
-        "content": {
-          "type": "_content-without-appearance",
-          "static": true,
+        "vk_2": {
+          "type": "chip",
           "settings": {
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 20
-          },
-          "blocks": {
-            "eyebrow": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Gummies energéticas</p>",
-                "type_preset": "h6",
-                "text_color": "{{ settings.color_palette.color1 }}"
-              },
-              "blocks": {}
-            },
-            "heading": {
-              "type": "text",
-              "settings": {
-                "text": "<h1>Energía + Enfoque.</h1>",
-                "type_preset": "h1"
-              },
-              "blocks": {}
-            },
-            "tagline": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Burn clean.</p>",
-                "type_preset": "h3"
-              },
-              "blocks": {}
-            },
-            "cta": {
-              "type": "button",
-              "settings": {
-                "label": "Comprar VUURK",
-                "link": "shopify://collections/all",
-                "style_class": "button"
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "eyebrow",
-            "heading",
-            "tagline",
-            "cta"
-          ]
-        }
-      },
-      "block_order": []
-    },
-    "marquee_vuurk": {
-      "type": "marquee",
-      "name": "Franja VUURK",
-      "settings": {
-        "movement_direction": "normal",
-        "background_color": "{{ settings.color_palette.color1 }}",
-        "padding-block-start": 16,
-        "padding-block-end": 16,
-        "gap_between_elements": 24
-      },
-      "blocks": {
-        "line": {
-          "type": "text",
+            "text": "Doypack con zipper"
+          }
+        },
+        "vk_3": {
+          "type": "chip",
           "settings": {
-            "text": "<p>Energía + Enfoque · Burn clean. · Gummies energéticas ·</p>",
-            "type_preset": "h3",
-            "text_color": "{{ settings.color_palette.background }}"
-          },
-          "blocks": {}
+            "text": "Energía + Enfoque"
+          }
         }
       },
       "block_order": [
-        "line"
-      ]
-    },
-    "intro_vuurk": {
-      "type": "media-with-content",
-      "name": "Presentación VUURK",
+        "vk_1",
+        "vk_2",
+        "vk_3"
+      ],
       "settings": {
-        "media_position": "left",
-        "media_width": "wide",
-        "media_height": "60svh",
-        "section_width": "page-width",
-        "extend_media": false,
-        "background_color": "{{ settings.color_palette.color2 }}",
-        "padding-block-start": 64,
-        "padding-block-end": 64
-      },
-      "blocks": {
-        "media": {
-          "type": "_media-without-appearance",
-          "static": true,
-          "settings": {
-            "media_type": "image",
-            "image": "shopify://shop_images/vuurk-pouches.webp",
-            "image_position": "cover"
-          },
-          "blocks": {}
-        },
-        "content": {
-          "type": "_content-without-appearance",
-          "static": true,
-          "settings": {
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 20
-          },
-          "blocks": {
-            "eyebrow": {
-              "type": "text",
-              "settings": {
-                "text": "<p>El producto</p>",
-                "type_preset": "h6"
-              },
-              "blocks": {}
-            },
-            "heading": {
-              "type": "text",
-              "settings": {
-                "text": "<h2>VUURK. Gummies energéticas en doypack.</h2>",
-                "type_preset": "h2"
-              },
-              "blocks": {}
-            },
-            "attrs": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Energía + Enfoque · Burn clean. · Doypack</p>",
-                "type_preset": "h5"
-              },
-              "blocks": {}
-            },
-            "cta": {
-              "type": "button",
-              "settings": {
-                "label": "Comprar VUURK",
-                "link": "shopify://collections/all",
-                "style_class": "button"
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "eyebrow",
-            "heading",
-            "attrs",
-            "cta"
-          ]
-        }
-      },
-      "block_order": []
-    },
-    "gallery_vuurk": {
-      "type": "carousel",
-      "name": "Galería de renders",
-      "settings": {
-        "columns": 3,
-        "mobile_columns": "1",
-        "section_width": "page-width",
-        "columns_gap": 16,
-        "background_color": "{{ settings.color_palette.color3 }}",
-        "icons_style": "arrow",
-        "icons_shape": "circle",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      },
-      "blocks": {
-        "static-header": {
-          "type": "group",
-          "settings": {
-            "content_direction": "column",
-            "gap": 12,
-            "width": "fill",
-            "padding-block-end": 24
-          },
-          "blocks": {
-            "eyebrow": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Packaging</p>",
-                "type_preset": "h6",
-                "text_color": "{{ settings.color_palette.color1 }}"
-              },
-              "blocks": {}
-            },
-            "heading": {
-              "type": "text",
-              "settings": {
-                "text": "<h2>El doypack, desde cada ángulo.</h2>",
-                "type_preset": "h2"
-              },
-              "blocks": {}
-            },
-            "text": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Renders del envase original de VUURK.</p>",
-                "type_preset": "rte"
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "eyebrow",
-            "heading",
-            "text"
-          ],
-          "static": true
-        },
-        "static-carousel-content": {
-          "type": "_carousel-content",
-          "static": true,
-          "settings": {
-            "height": "fit",
-            "position": "top"
-          },
-          "blocks": {
-            "card_frontal": {
-              "type": "_card",
-              "settings": {
-                "gap": 12
-              },
-              "blocks": {
-                "image_frontal": {
-                  "type": "image",
-                  "settings": {
-                    "image": "shopify://shop_images/vuurk-render-frontal.webp",
-                    "image_ratio": "portrait",
-                    "border_radius": 12
-                  },
-                  "blocks": {}
-                },
-                "caption_frontal": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Vista frontal</p>",
-                    "type_preset": "h6"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "image_frontal",
-                "caption_frontal"
-              ]
-            },
-            "card_34": {
-              "type": "_card",
-              "settings": {
-                "gap": 12
-              },
-              "blocks": {
-                "image_34": {
-                  "type": "image",
-                  "settings": {
-                    "image": "shopify://shop_images/vuurk-render-34.webp",
-                    "image_ratio": "portrait",
-                    "border_radius": 12
-                  },
-                  "blocks": {}
-                },
-                "caption_34": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Perspectiva 3/4</p>",
-                    "type_preset": "h6"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "image_34",
-                "caption_34"
-              ]
-            },
-            "card_lateral": {
-              "type": "_card",
-              "settings": {
-                "gap": 12
-              },
-              "blocks": {
-                "image_lateral": {
-                  "type": "image",
-                  "settings": {
-                    "image": "shopify://shop_images/vuurk-render-lateral.webp",
-                    "image_ratio": "portrait",
-                    "border_radius": 12
-                  },
-                  "blocks": {}
-                },
-                "caption_lateral": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Lateral</p>",
-                    "type_preset": "h6"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "image_lateral",
-                "caption_lateral"
-              ]
-            },
-            "card_zipper": {
-              "type": "_card",
-              "settings": {
-                "gap": 12
-              },
-              "blocks": {
-                "image_zipper": {
-                  "type": "image",
-                  "settings": {
-                    "image": "shopify://shop_images/vuurk-render-zipper.webp",
-                    "image_ratio": "portrait",
-                    "border_radius": 12
-                  },
-                  "blocks": {}
-                },
-                "caption_zipper": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Detalle del zipper</p>",
-                    "type_preset": "h6"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "image_zipper",
-                "caption_zipper"
-              ]
-            },
-            "card_base": {
-              "type": "_card",
-              "settings": {
-                "gap": 12
-              },
-              "blocks": {
-                "image_base": {
-                  "type": "image",
-                  "settings": {
-                    "image": "shopify://shop_images/vuurk-render-base.webp",
-                    "image_ratio": "portrait",
-                    "border_radius": 12
-                  },
-                  "blocks": {}
-                },
-                "caption_base": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Detalle de la base</p>",
-                    "type_preset": "h6"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "image_base",
-                "caption_base"
-              ]
-            }
-          },
-          "block_order": [
-            "card_frontal",
-            "card_34",
-            "card_lateral",
-            "card_zipper",
-            "card_base"
-          ]
-        }
-      },
-      "block_order": []
-    },
-    "info_vuurk": {
-      "type": "section",
-      "name": "Información VUURK",
-      "settings": {
-        "content_direction": "column",
-        "gap": 20,
-        "section_width": "page-width",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      },
-      "blocks": {
-        "eyebrow": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Información</p>",
-            "type_preset": "h6"
-          },
-          "blocks": {}
-        },
-        "heading": {
-          "type": "text",
-          "settings": {
-            "text": "<h2>Información del producto.</h2>",
-            "type_preset": "h2"
-          },
-          "blocks": {}
-        },
-        "items": {
-          "type": "group",
-          "settings": {
-            "content_direction": "row",
-            "vertical_on_mobile": true,
-            "gap": 16,
-            "width": "fill",
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "flex-start"
-          },
-          "blocks": {
-            "item_producto": {
-              "type": "group",
-              "settings": {
-                "content_direction": "column",
-                "gap": 8,
-                "width": "fill",
-                "border": "solid",
-                "border_width": 1,
-                "border_color": "{{ settings.color_palette.color3 }}",
-                "border_radius": 12,
-                "padding-block-start": 24,
-                "padding-block-end": 24,
-                "padding-inline-start": 24,
-                "padding-inline-end": 24
-              },
-              "blocks": {
-                "label_producto": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Producto</p>",
-                    "type_preset": "h6",
-                    "text_color": "{{ settings.color_palette.color1 }}"
-                  },
-                  "blocks": {}
-                },
-                "value_producto": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Gummies energéticas</p>",
-                    "type_preset": "h4"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "label_producto",
-                "value_producto"
-              ]
-            },
-            "item_linea": {
-              "type": "group",
-              "settings": {
-                "content_direction": "column",
-                "gap": 8,
-                "width": "fill",
-                "border": "solid",
-                "border_width": 1,
-                "border_color": "{{ settings.color_palette.color3 }}",
-                "border_radius": 12,
-                "padding-block-start": 24,
-                "padding-block-end": 24,
-                "padding-inline-start": 24,
-                "padding-inline-end": 24
-              },
-              "blocks": {
-                "label_linea": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Línea</p>",
-                    "type_preset": "h6",
-                    "text_color": "{{ settings.color_palette.color1 }}"
-                  },
-                  "blocks": {}
-                },
-                "value_linea": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Energía + Enfoque · Burn clean.</p>",
-                    "type_preset": "h4"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "label_linea",
-                "value_linea"
-              ]
-            },
-            "item_envase": {
-              "type": "group",
-              "settings": {
-                "content_direction": "column",
-                "gap": 8,
-                "width": "fill",
-                "border": "solid",
-                "border_width": 1,
-                "border_color": "{{ settings.color_palette.color3 }}",
-                "border_radius": 12,
-                "padding-block-start": 24,
-                "padding-block-end": 24,
-                "padding-inline-start": 24,
-                "padding-inline-end": 24
-              },
-              "blocks": {
-                "label_envase": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Envase</p>",
-                    "type_preset": "h6",
-                    "text_color": "{{ settings.color_palette.color1 }}"
-                  },
-                  "blocks": {}
-                },
-                "value_envase": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Doypack</p>",
-                    "type_preset": "h4"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "label_envase",
-                "value_envase"
-              ]
-            }
-          },
-          "block_order": [
-            "item_producto",
-            "item_linea",
-            "item_envase"
-          ]
-        },
-        "note": {
-          "type": "text",
-          "settings": {
-            "text": "<p>La ficha técnica completa (contenido, ingredientes, modo de uso y advertencias) se publicará cuando VUURK la confirme.</p>",
-            "type_preset": "rte"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "eyebrow",
-        "heading",
-        "items",
-        "note"
-      ]
-    },
-    "buy_vuurk": {
-      "type": "section",
-      "name": "Compra VUURK",
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "gap": 48,
-        "section_width": "page-width",
-        "background_color": "{{ settings.color_palette.color2 }}",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      },
-      "blocks": {
-        "image": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/vuurk-doypack-frontal.webp",
-            "image_ratio": "portrait",
-            "width": "custom",
-            "custom_width": 45,
-            "width_mobile": "fill",
-            "border_radius": 16
-          },
-          "blocks": {}
-        },
-        "details": {
-          "type": "group",
-          "settings": {
-            "content_direction": "column",
-            "gap": 16,
-            "width": "fill"
-          },
-          "blocks": {
-            "eyebrow": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Comprar</p>",
-                "type_preset": "h6"
-              },
-              "blocks": {}
-            },
-            "heading": {
-              "type": "text",
-              "settings": {
-                "text": "<h2>VUURK Energía + Enfoque</h2>",
-                "type_preset": "h2"
-              },
-              "blocks": {}
-            },
-            "sub": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Gummies energéticas · Doypack</p>",
-                "type_preset": "h5"
-              },
-              "blocks": {}
-            },
-            "pending": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Precio, envíos y medios de pago: pendientes de confirmación.</p>",
-                "type_preset": "rte"
-              },
-              "blocks": {}
-            },
-            "cta": {
-              "type": "button",
-              "settings": {
-                "label": "Comprar VUURK",
-                "link": "shopify://collections/all",
-                "style_class": "button"
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "eyebrow",
-            "heading",
-            "sub",
-            "pending",
-            "cta"
-          ]
-        }
-      },
-      "block_order": [
-        "image",
-        "details"
-      ]
-    },
-    "featured_product_vuurk": {
-      "type": "featured-product-information",
-      "name": "Compra VUURK (producto Shopify)",
-      "disabled": true,
-      "settings": {
+        "eyebrow": "VUURK Energy Gummies",
+        "title_line_1": "Energía",
+        "title_line_2": "+ Enfoque.",
+        "text": "<p>Gummies energéticas en doypack, con el diseño negro y naranja de VUURK.</p>",
+        "image": "shopify://shop_images/VUURK_Energy_Gummies_Pouch.png",
+        "image_alt": "Doypack VUURK Energy Gummies, diseño negro, naranja y crema",
         "product": "",
-        "gap": 48,
-        "equal_columns": true,
-        "padding-block-start": 40,
-        "padding-block-end": 40
-      },
-      "blocks": {
-        "media-gallery": {
-          "type": "_featured-product-information-carousel",
-          "static": true,
-          "settings": {
-            "constrain_to_viewport": true,
-            "media_fit": "contain",
-            "media_radius": 0,
-            "extend_media": false,
-            "hide_variants": true,
-            "slideshow_controls_style": "counter",
-            "slideshow_mobile_controls_style": "dots",
-            "thumbnail_position": "bottom",
-            "thumbnail_width": 44
-          },
-          "blocks": {}
-        },
-        "product-details": {
-          "type": "_product-details",
-          "static": true,
-          "settings": {
-            "gap": 28,
-            "sticky_details_desktop": true,
-            "padding-block-start": 24,
-            "padding-block-end": 24
-          },
-          "blocks": {
-            "header": {
-              "type": "group",
-              "settings": {
-                "gap": 12
-              },
-              "blocks": {
-                "title": {
-                  "type": "product-title",
-                  "settings": {
-                    "type_preset": "rte"
-                  },
-                  "blocks": {}
-                },
-                "price": {
-                  "type": "price",
-                  "settings": {
-                    "show_installments": true,
-                    "show_tax_info": true
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "title",
-                "price"
-              ]
-            },
-            "variant_picker": {
-              "type": "variant-picker",
-              "settings": {},
-              "blocks": {}
-            },
-            "buy_buttons": {
-              "type": "buy-buttons",
-              "settings": {},
-              "blocks": {
-                "quantity": {
-                  "type": "quantity",
-                  "static": true,
-                  "settings": {},
-                  "blocks": {}
-                },
-                "add-to-cart": {
-                  "type": "add-to-cart",
-                  "static": true,
-                  "settings": {},
-                  "blocks": {}
-                },
-                "accelerated-checkout": {
-                  "type": "accelerated-checkout",
-                  "static": true,
-                  "settings": {},
-                  "blocks": {}
-                }
-              },
-              "block_order": []
-            }
-          },
-          "block_order": [
-            "header",
-            "variant_picker",
-            "buy_buttons"
-          ]
-        }
-      },
-      "block_order": []
+        "show_price": true,
+        "button_label": "Comprar VUURK",
+        "button_link": "#comprar",
+        "button_2_label": "Ver el envase",
+        "button_2_link": "#envase"
+      }
     },
-    "faq_vuurk": {
-      "type": "section",
-      "name": "Preguntas frecuentes",
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "flex-start",
-        "gap": 48,
-        "section_width": "page-width",
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      },
+    "vk_intro": {
+      "type": "vuurk-intro",
       "blocks": {
-        "intro": {
-          "type": "group",
+        "vk_1": {
+          "type": "spec",
           "settings": {
-            "content_direction": "column",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 35,
-            "width_mobile": "fill"
-          },
-          "blocks": {
-            "eyebrow": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Preguntas</p>",
-                "type_preset": "h6",
-                "text_color": "{{ settings.color_palette.color1 }}"
-              },
-              "blocks": {}
-            },
-            "heading": {
-              "type": "text",
-              "settings": {
-                "text": "<h2>Preguntas frecuentes.</h2>",
-                "type_preset": "h2"
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "eyebrow",
-            "heading"
-          ]
+            "label": "Formato",
+            "value": "Gummies"
+          }
         },
-        "questions": {
-          "type": "group",
+        "vk_2": {
+          "type": "spec",
           "settings": {
-            "content_direction": "column",
-            "gap": 0,
-            "width": "fill"
-          },
-          "blocks": {
-            "accordion": {
-              "type": "accordion",
-              "settings": {
-                "icon": "plus",
-                "dividers": true,
-                "type_preset": "h5"
-              },
-              "blocks": {
-                "row_que_es": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "¿Qué es VUURK?",
-                    "open_by_default": true
-                  },
-                  "blocks": {
-                    "answer_que_es": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>Gummies energéticas de la línea Energía + Enfoque.</p>",
-                        "type_preset": "rte"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "answer_que_es"
-                  ]
-                },
-                "row_cafeina": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "¿Cuánta cafeína contiene?",
-                    "open_by_default": false
-                  },
-                  "blocks": {
-                    "answer_cafeina": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>Información pendiente de confirmación por VUURK.</p>",
-                        "type_preset": "rte"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "answer_cafeina"
-                  ]
-                },
-                "row_contenido": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "¿Cuántas gummies trae cada doypack?",
-                    "open_by_default": false
-                  },
-                  "blocks": {
-                    "answer_contenido": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>Información pendiente de confirmación por VUURK.</p>",
-                        "type_preset": "rte"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "answer_contenido"
-                  ]
-                },
-                "row_uso": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "¿Cómo se toman?",
-                    "open_by_default": false
-                  },
-                  "blocks": {
-                    "answer_uso": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>Información pendiente de confirmación por VUURK.</p>",
-                        "type_preset": "rte"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "answer_uso"
-                  ]
-                },
-                "row_envios": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "¿A dónde hacen envíos?",
-                    "open_by_default": false
-                  },
-                  "blocks": {
-                    "answer_envios": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>Información pendiente de confirmación por VUURK.</p>",
-                        "type_preset": "rte"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "answer_envios"
-                  ]
-                },
-                "row_pagos": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "¿Qué medios de pago aceptan?",
-                    "open_by_default": false
-                  },
-                  "blocks": {
-                    "answer_pagos": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>Información pendiente de confirmación por VUURK.</p>",
-                        "type_preset": "rte"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "answer_pagos"
-                  ]
-                }
-              },
-              "block_order": [
-                "row_que_es",
-                "row_cafeina",
-                "row_contenido",
-                "row_uso",
-                "row_envios",
-                "row_pagos"
-              ]
-            }
-          },
-          "block_order": [
-            "accordion"
-          ]
+            "label": "Envase",
+            "value": "Doypack"
+          }
+        },
+        "vk_3": {
+          "type": "spec",
+          "settings": {
+            "label": "Línea",
+            "value": "Energía + Enfoque"
+          }
         }
       },
       "block_order": [
-        "intro",
-        "questions"
-      ]
-    },
-    "unzip_vuurk": {
-      "type": "vuurk-unzip-player",
-      "name": "Abrí tu energía",
+        "vk_1",
+        "vk_2",
+        "vk_3"
+      ],
       "settings": {
-        "eyebrow": "Experiencia VUURK",
-        "title": "Abrí tu energía.",
-        "slider_label": "Apertura del envase",
-        "open_alt": "Envase VUURK abierto",
+        "eyebrow": "El producto",
+        "title": "VUURK Energy Gummies.",
+        "text": "<p>Gummies energéticas de la línea Energía + Enfoque, presentadas en un doypack negro, naranja y crema con cierre zipper.</p>",
+        "image": "shopify://shop_images/VUURK_Energy_Gummies_Berry_Pouch.png",
+        "image_alt": "Doypack VUURK en perspectiva 3/4"
+      }
+    },
+    "vk_energy": {
+      "type": "vuurk-energy-focus",
+      "settings": {
+        "word_1": "Energía",
+        "text_1": "Para los días que piden ritmo: entrenar, estudiar, trabajar o salir de viaje.",
+        "word_2": "Enfoque",
+        "text_2": "Para los momentos en que lo importante necesita tu atención.",
+        "image": "shopify://shop_images/VUURK_Energy_Gummies_Pouch.png",
+        "image_alt": "Vista lateral del doypack VUURK"
+      }
+    },
+    "vk_features": {
+      "type": "vuurk-features",
+      "blocks": {
+        "vk_1": {
+          "type": "feature",
+          "settings": {
+            "icon": "gummy",
+            "title": "Formato gummy",
+            "text": "Producto en formato gummy."
+          }
+        },
+        "vk_2": {
+          "type": "feature",
+          "settings": {
+            "icon": "pouch",
+            "title": "Doypack con zipper",
+            "text": "Envase flexible con cierre zipper en la parte superior."
+          }
+        },
+        "vk_3": {
+          "type": "feature",
+          "settings": {
+            "icon": "bolt",
+            "title": "Energía + Enfoque",
+            "text": "La línea impresa en el frente del envase."
+          }
+        },
+        "vk_4": {
+          "type": "feature",
+          "settings": {
+            "icon": "lock",
+            "title": "Checkout de Shopify",
+            "text": "Pago y pedido con el checkout nativo de Shopify."
+          }
+        }
+      },
+      "block_order": [
+        "vk_1",
+        "vk_2",
+        "vk_3",
+        "vk_4"
+      ],
+      "settings": {
+        "eyebrow": "Características verificadas",
+        "title": "Lo que ves es lo que hay.",
+        "note": "Solo se muestran datos visibles en el envase o propios de la tienda. La ficha técnica se añadirá cuando VUURK la confirme."
+      }
+    },
+    "vk_viewer": {
+      "type": "vuurk-unzip-player",
+      "settings": {
+        "eyebrow": "EXPERIENCIA VUURK",
+        "title": "DESCUBRÍ VUURK",
+        "slider_label": "Apertura del envase VUURK",
+        "open_alt": "Demostración de apertura del envase VUURK",
+        "product": "vuurk-energy-gummies-energia-enfoque",
         "cta_label": "Comprar VUURK",
-        "cta_link": "#comprar"
+        "frame_count": 24
+      }
+    },
+    "vk_moments": {
+      "type": "vuurk-moments",
+      "blocks": {
+        "vk_1": {
+          "type": "moment",
+          "settings": {
+            "title": "Entrenamiento",
+            "text": "En la mochila del gimnasio o de la salida a correr."
+          }
+        },
+        "vk_2": {
+          "type": "moment",
+          "settings": {
+            "title": "Estudio",
+            "text": "Sobre el escritorio, junto a los apuntes."
+          }
+        },
+        "vk_3": {
+          "type": "moment",
+          "settings": {
+            "title": "Trabajo",
+            "text": "Para la jornada, entre reunión y reunión."
+          }
+        },
+        "vk_4": {
+          "type": "moment",
+          "settings": {
+            "title": "En movimiento",
+            "text": "El doypack con zipper viaja contigo."
+          }
+        }
+      },
+      "block_order": [
+        "vk_1",
+        "vk_2",
+        "vk_3",
+        "vk_4"
+      ],
+      "settings": {
+        "eyebrow": "Situaciones de uso",
+        "title": "Hecho para tu día."
+      }
+    },
+    "vk_info": {
+      "type": "vuurk-usage-info",
+      "blocks": {
+        "vk_1": {
+          "type": "row",
+          "settings": {
+            "label": "Contenido del envase",
+            "value": ""
+          }
+        },
+        "vk_2": {
+          "type": "row",
+          "settings": {
+            "label": "Porción",
+            "value": ""
+          }
+        },
+        "vk_3": {
+          "type": "row",
+          "settings": {
+            "label": "Cafeína por porción",
+            "value": ""
+          }
+        },
+        "vk_4": {
+          "type": "row",
+          "settings": {
+            "label": "Modo de uso",
+            "value": ""
+          }
+        },
+        "vk_5": {
+          "type": "row",
+          "settings": {
+            "label": "Ingredientes",
+            "value": ""
+          }
+        },
+        "vk_6": {
+          "type": "row",
+          "settings": {
+            "label": "Advertencias",
+            "value": ""
+          }
+        }
+      },
+      "block_order": [
+        "vk_1",
+        "vk_2",
+        "vk_3",
+        "vk_4",
+        "vk_5",
+        "vk_6"
+      ],
+      "settings": {
+        "eyebrow": "Información de consumo",
+        "title": "Datos del producto.",
+        "text": "<p>Publicamos solo información confirmada por VUURK. Consulta siempre la etiqueta del envase.</p>",
+        "pending_text": "Pendiente de confirmación por VUURK"
+      }
+    },
+    "vk_buy": {
+      "type": "vuurk-buy",
+      "blocks": {
+        "vk_1": {
+          "type": "trust",
+          "settings": {
+            "text": "Checkout seguro de Shopify"
+          }
+        }
+      },
+      "block_order": [
+        "vk_1"
+      ],
+      "settings": {
+        "product": "vuurk-energy-gummies-energia-enfoque",
+        "eyebrow": "Comprar",
+        "title": "VUURK Energy Gummies",
+        "text": "<p>Doypack VUURK Energía + Enfoque.</p>",
+        "image": "shopify://shop_images/VUURK_Energy_Gummies_Pouch.png",
+        "image_alt": "Doypack VUURK Energy Gummies",
+        "button_label": "Agregar al carrito",
+        "show_dynamic_checkout": true,
+        "variant_label": "Presentación",
+        "quantity_label": "Cantidad",
+        "in_stock_label": "Disponible",
+        "sold_out_label": "Agotado",
+        "unavailable_label": "Disponible pronto"
+      }
+    },
+    "vk_faq": {
+      "type": "vuurk-faq",
+      "blocks": {
+        "vk_1": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué es VUURK?",
+            "answer": "<p>Gummies energéticas de la línea Energía + Enfoque, en doypack.</p>"
+          }
+        },
+        "vk_2": {
+          "type": "question",
+          "settings": {
+            "question": "¿Cuánta cafeína contiene?",
+            "answer": "<p>Información pendiente de confirmación por VUURK.</p>"
+          }
+        },
+        "vk_3": {
+          "type": "question",
+          "settings": {
+            "question": "¿Cuántas gummies trae cada doypack?",
+            "answer": "<p>Información pendiente de confirmación por VUURK.</p>"
+          }
+        },
+        "vk_4": {
+          "type": "question",
+          "settings": {
+            "question": "¿Cómo se toman?",
+            "answer": "<p>Información pendiente de confirmación por VUURK.</p>"
+          }
+        },
+        "vk_5": {
+          "type": "question",
+          "settings": {
+            "question": "¿A dónde hacen envíos?",
+            "answer": "<p>Información pendiente de confirmación por VUURK.</p>"
+          }
+        },
+        "vk_6": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué medios de pago aceptan?",
+            "answer": "<p>Información pendiente de confirmación por VUURK.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "vk_1",
+        "vk_2",
+        "vk_3",
+        "vk_4",
+        "vk_5",
+        "vk_6"
+      ],
+      "settings": {
+        "eyebrow": "Preguntas frecuentes",
+        "title": "Antes de comprar.",
+        "open_first": true,
+        "button_label": "Comprar VUURK",
+        "button_link": "#comprar"
       }
     }
   },
   "order": [
-    "hero_vuurk",
-    "marquee_vuurk",
-    "intro_vuurk",
-    "unzip_vuurk",
-    "gallery_vuurk",
-    "info_vuurk",
-    "buy_vuurk",
-    "featured_product_vuurk",
-    "faq_vuurk"
+    "vk_hero",
+    "vk_intro",
+    "vk_energy",
+    "vk_features",
+    "vk_viewer",
+    "vk_moments",
+    "vk_info",
+    "vk_buy",
+    "vk_faq"
   ]
 }

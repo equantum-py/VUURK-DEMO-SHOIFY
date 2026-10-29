@@ -987,12 +987,25 @@
         "intro",
         "questions"
       ]
+    },
+    "unzip_vuurk": {
+      "type": "vuurk-unzip-player",
+      "name": "Abrí tu energía",
+      "settings": {
+        "eyebrow": "Experiencia VUURK",
+        "title": "Abrí tu energía.",
+        "slider_label": "Apertura del envase",
+        "open_alt": "Envase VUURK abierto",
+        "cta_label": "Comprar VUURK",
+        "cta_link": "#comprar"
+      }
     }
   },
   "order": [
     "hero_vuurk",
     "marquee_vuurk",
     "intro_vuurk",
+    "unzip_vuurk",
     "gallery_vuurk",
     "info_vuurk",
     "buy_vuurk",
